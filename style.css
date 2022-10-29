@@ -1,0 +1,224 @@
+:root {
+   --primary-color: rgb(2, 250, 246);
+   --secundary-color: rgb(2, 169, 171);
+   --error-color: red;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   font-family: Arial, Helvetica, sans-serif;
+   color: white;
+}
+
+h2 {
+   margin-bottom: 10px;
+}
+
+body {
+   background: url(../img/fondo.jpg);
+   background-size: cover;
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+}
+
+.logo {
+   height: 40px;
+   margin-bottom: 16px;
+}
+
+main {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 20px;
+   max-width: 1024px;
+   margin: 0 auto;
+}
+
+.form-card {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   min-width: 400px;
+   background-color: rgba(0, 0, 0, 0.7);
+   padding: 50px;
+}
+
+.steps {
+   display: flex;
+   flex-direction: row;
+   margin-bottom: 20px;
+}
+
+.step-item {
+   padding: 10px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 0 30px;
+}
+
+.step-circle {
+   border-radius: 100%;
+   background-color: var(--secundary-color);
+   width: 30px;
+   height: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: black;
+}
+
+.step-label {
+   color: white;
+   margin-bottom: 6px;
+}
+
+.step-circle.active {
+   background-color: var(--primary-color) !important;
+}
+
+.step-form {
+   width: 100%;
+}
+
+.form-card-body {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.form-group {
+   margin-bottom: 24px;
+}
+
+.form-group>label {
+   font-size: 14px;
+}
+
+.form-input-box>input,
+.form-input-box>select {
+   font-size: 1rem;
+   height: 30px;
+   width: -webkit-fill-available;
+   background-color: transparent;
+   outline: none;
+   padding: 0 10px;
+   border: 3px solid rgba(0, 0, 0, 0);
+   border-bottom: 3px solid var(--secundary-color);
+   margin-bottom: 6px;
+   transition: all ease-in-out .3s;
+}
+
+.form-input-box>input:focus {
+   border: 3px solid var(--primary-color);
+}
+
+.form-error-message {
+   font-size: 14px;
+   color: var(--error-color);
+   visibility: hidden;
+}
+
+.show-message {
+   visibility: visible;
+}
+
+.form-next-button {
+   height: 40px;
+   width: 100%;
+   color: black;
+   border: none;
+   margin-top: 16px;
+   background-color: var(--primary-color);
+   transition: all ease-in-out .3s;
+}
+
+.form-next-button:focus {
+   background-color: var(--secundary-color);
+}
+
+.form-next-button.disabled {
+   background-color: var(--secundary-color);
+}
+
+.hide {
+   display: none;
+}
+
+.show {
+   display: flex;
+}
+
+.form-input-check {
+   margin-bottom: 8px;
+   display: flex;
+   align-items: center;
+}
+
+.form-input-check>input {
+   height: 20px;
+   width: 20px;
+   margin-right: 10px;
+}
+
+.buttons-group {
+   display: flex;
+}
+
+.margin-left-10 {
+   margin-left: 10px;
+}
+
+.margin-right-10 {
+   margin-right: 10px;
+}
+
+
+.container1{
+padding: 20px ;
+text-align: center;
+color: #000;
+  }
+.email-box{
+ height: 40px;
+ display: flex;
+ justify-content: center;
+}
+.email-box i{
+  background-color: rgb(4, 127, 127);
+  width: 40px;
+  line-height: 40px;
+  }
+.tbox, .btn2{
+border: none;
+outline: none;
+  }
+.tbox{
+width: 0px;
+color: #000;
+
+}
+.email-box:hover > .tbox, .tbox:focus {
+   width: 260px;
+   padding: 0 10px;
+   
+   }
+.btn2{
+background-color: rgb(4, 127, 127);
+color: rgb(14, 15, 14);
+padding: 0 10px;
+text-transform: uppercase;
+cursor: pointer;
+}
+.email{
+   grid-template-columns: 1fr 1fr;
+}
+.table{
+   color: rgb(251, 251, 251);
+   text-align: center;
+}
+
